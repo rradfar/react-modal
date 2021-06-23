@@ -1,14 +1,15 @@
 import { useState } from 'react';
+import Modal from './Components/Modal';
 import './App.scss';
 
 function App() {
-  const [modal, setModal] = useState(false);
-  const Toggle = () => setModal(!modal);
+  const [showModal, setShowModal] = useState(false);
+  const Toggle = () => setShowModal(!showModal);
 
   return (
     <div className='App'>
       <button onClick={() => Toggle()}>Click</button>
-      {modal && <div className='modal'>This is a modal</div>}
+      {<Modal showModal={showModal} />}
     </div>
   );
 }

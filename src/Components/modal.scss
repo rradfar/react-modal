@@ -1,0 +1,23 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000, $alpha: 0.35);
+
+  .modal {
+    background-color: rgba(255, 255, 255, 0.35);
+    width: calc(15rem + 15vw);
+    height: auto;
+    padding: 2rem;
+    border-radius: 20px;
+
+    &_header {
+      position: relative;
+    }
+  }
+}
