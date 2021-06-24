@@ -18,6 +18,37 @@
 
     &_header {
       position: relative;
+      border-bottom: 1px solid #ddd;
+
+      &-title {
+        text-align: center;
+      }
+
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &_content {
+      border-bottom: 1px solid #ddd;
+      padding: 2rem 0;
+    }
+
+    &_footer {
+      padding: 2rem 0;
+      padding-bottom: 0;
+
+      button {
+        float: right;
+        padding: 0.5rem;
+        border-radius: 8px;
+      }
+
+      .submit {
+        margin-right: 1rem;
+      }
     }
   }
 }
