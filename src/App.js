@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import Modal from './Components/Modal';
 import './App.scss';
 
@@ -9,7 +10,9 @@ function App() {
   return (
     <div className='App'>
       <button onClick={() => Toggle()}>Click</button>
-      {<Modal showModal={showModal} />}
+      <Modal showModal={showModal} close={Toggle} title='Modal title'>
+        Modal content goes here
+      </Modal>
     </div>
   );
 }
