@@ -9,7 +9,9 @@ function App() {
 
   return (
     <div className='App'>
-      <button onClick={() => Toggle()}>Click</button>
+      <button className='click' onClick={() => Toggle()}>
+        Click
+      </button>
       <Modal showModal={showModal} close={Toggle} title='Modal title'>
         Modal content goes here
       </Modal>
